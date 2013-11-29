@@ -1,2 +1,0 @@
-[19-Jul-2013 15:01:42] PHP Warning:  require(/tmhOAuth.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home1/mutation/public_html/CleanTemplateMultiplePageVersion/twitter/index.php on line 141
-[19-Jul-2013 15:01:42] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/tmhOAuth.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home1/mutation/public_html/CleanTemplateMultiplePageVersion/twitter/index.php on line 141

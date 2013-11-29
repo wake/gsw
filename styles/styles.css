@@ -1,0 +1,403 @@
+/*
+GENERAL STYLES
+*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300);
+@import url(http://fonts.googleapis.com/css?family=Oswald:300);
+::-moz-selection {
+    color: #F7F7F7;
+    background: #1a566f;
+}
+::selection {
+    color: #F7F7F7;
+    background: #1a566f;
+}
+body {
+    background: #fff;
+    color: #000;
+    font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	font-size: 18px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+}
+a {
+	color: #a52f54;
+	transition: .25s;
+}
+a:hover {
+	color: #892847;
+}
+a:focus {
+	outline: none;
+	color: #a52f54;
+}
+.form-control {
+    box-shadow: none;
+    border: none;
+    color: #1F1F21;
+	background: #f7f7f7;
+	background: rgba(247, 247, 247, 0.7);
+	border-radius: 0;
+	transition: .25s;
+}
+.form-control:hover {
+	background: #f7f7f7;
+	background: rgba(247, 247, 247, 0.8);
+}
+.form-control:focus {
+    box-shadow: none;
+	background: #f7f7f7;
+	background: rgba(247, 247, 247, 0.9);
+}
+.input-group {
+	margin-bottom: 24px;
+}
+.input-group-addon {
+	box-shadow: none;
+    border: none;
+    color: #a52f54;
+	color: rgba(165, 47, 84, 0.7);
+	background: #f7f7f7;
+	background: rgba(247, 247, 247, 0.6);
+	border-radius: 0;
+	transition: .25s;
+}
+.btn {
+    box-shadow: none;
+    border: none;
+    color: #F7F7F7;
+	background: #a52f54;
+	background: rgba(165, 47, 84, 0.7);
+	border-radius: 0;
+    transition: .25s;
+}
+.btn:hover {
+    color: #F7F7F7;
+	background: #a52f54;
+	background: rgba(165, 47, 84, 0.9);
+}
+.btn:focus {
+    outline: none;
+    color: #F7F7F7;
+}
+.input-group-lg>.form-control, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn {
+	border-radius: 0;
+}
+#newsletter-success, #newsletter-error, #contact-success, #contact-error {
+    display: none;
+}
+.alert {
+	margin-top: 24px;
+	border-radius: 0;
+	border: none;
+	text-align: center;
+	font-weight: bold;
+}
+.alert-danger {
+	background: #ff3a2d;
+	background: rgba(255, 58, 45, 0.75);
+	color: #F7F7F7;
+}
+.alert-success {
+	background: #4cd964;
+	background: rgba(76, 217, 100, 0.75);
+	color: #F7F7F7;
+}
+.ketchup-error ul {
+	background: #FF2D55;
+	background: rgba(255, 45, 85, 0.75);
+	color: #F7F7F7;
+}
+.ketchup-error span {
+	border-top-color: #FF2D55;
+	border-top-color: rgba(255, 45, 85, 0.75);
+}
+.tooltip-inner {
+	background: #ff2d55;
+	background: rgba(255, 45, 85, 0.75);
+	border-radius: 0;
+}
+.tooltip.left .tooltip-arrow {
+	border-left-color: #ff2d55;
+	border-left-color: rgba(255, 45, 85, 0.75);
+}
+.tooltip.top .tooltip-arrow {
+	border-top-color: #ff2d55;
+	border-top-color: rgba(255, 45, 85, 0.75);
+}
+.tooltip.right .tooltip-arrow {
+	border-right-color: #ff2d55;
+	border-right-color: rgba(255, 45, 85, 0.75);
+}
+.tooltip.bottom .tooltip-arrow {
+	border-bottom-color: #ff2d55;
+	border-bottom-color: rgba(255, 45, 85, 0.75);
+}
+.heading {
+	margin: 0;
+	text-align: center;
+	margin-bottom: 48px;
+	font-size: 48px;
+  font-weight: bold;
+}
+.lead {
+	font-size: 24px;
+}
+
+/* MAIN */
+.main {
+    padding: 48px;
+    text-align: center;
+	/* background: rgba(31, 31, 33, 0.5); */
+    background: url(../images/slide/01.jpg) right bottom no-repeat;
+}
+.logo-wrapper {
+    text-align: center;
+    margin: 48px 0;
+}
+.logo {
+    max-width: 100%;
+	font-size: 96px;
+}
+.main-heading {
+    margin: 24px 0;
+    font-size: 48px;
+    font-weight: bold;
+}
+.container p {
+  font-weight: bold !important;
+}
+.countdown {
+    margin: 28px 0 10px;
+}
+.countdown li {
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    margin: 12px 24px;
+    border-radius: 100%;
+    background: #a52f54;
+	background: rgba(255, 61, 61, 0.6);
+    transition: .25s;
+}
+.countdown li:hover {
+    background: #a52f54;
+	background: rgba(255, 61, 61, 0.8);
+}
+.countdown span {
+    font-size: 48px;
+    line-height: 110px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 300;
+	transition: .5s;
+}
+.countdown p {
+    font-size: 18px;
+    margin-top: -30px;
+	transition: .5s;
+}
+.countdown li:hover span {
+	font-size: 60px;
+}
+.learn-more {
+	font-size: 72px;
+	line-height: 12px;
+}
+
+/*
+ABOUT
+*/
+.about {
+	background: #297fa3;
+	background: rgba(255, 191, 138, 0.5);
+	padding: 48px 12px;
+	text-align: center;
+}
+.about-item {
+	margin-top: 24px;
+}
+.about-icon {
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	font-size: 2.5em;
+	line-height: 100px;
+	background: #a62d2d;
+	/* background: rgba(35, 105, 136, 0.5); */
+	border-radius: 100%;
+	transition: .5s;
+}
+.about-item:hover .about-icon {
+  /*
+	font-size: 3.5em;
+	background: #236988;
+	background: rgba(35, 105, 136, 0.8);
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+  */
+}
+.about-heading {
+	margin: 24px 0;
+}
+
+/*
+NEWSLETTER
+*/
+.newsletter {
+	padding: 96px 12px;
+	background: rgba(31, 31, 33, 0.5);
+}
+#newsletter-form {
+	margin: 0 auto;
+	width: 75%;
+}
+.newsletter .input-group {
+	margin-bottom: 0;
+}
+
+/*
+CONTACT
+*/
+.contact {
+	background: #297fa3;
+	background: rgba(41, 127, 163, 0.9);
+	padding: 48px 12px;
+}
+.contact-info i {
+	margin-right: 6px;
+}
+.contact-info {
+	margin-bottom: 24px;
+}
+
+/*
+FOOTER
+*/
+.footer {
+	padding: 48px 12px;
+	background: rgba(31, 31, 33, 0.9);
+	text-align: center;
+}
+.back-top {
+	font-size: 72px;
+	line-height: 24px;
+}
+.copyright {
+	margin-top: 24px;
+	margin-bottom: 48px;
+}
+.social-icon {
+	display: inline-block;
+	font-size: 42px;
+	background: #f7f7f7;
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	border-radius: 100%;
+	opacity: .4;
+	transition: .25s;
+	margin: 12px 3px;
+}
+.social-icon:hover {
+	opacity: .8;
+}
+
+/*
+MEDIA QUERIES
+*/
+@media all and (max-width: 768px) {
+	.main {
+		padding-top: 12px;
+	}
+	#newsletter-form {
+		width: 100%;
+	}
+}
+
+.skills{
+  width:440px;
+  margin-left:50px;
+}
+.skillBar{
+  margin-bottom:5px;
+}
+
+
+.skillbarHolder {
+    background-color: #fafafa;
+  height:35px;
+  position:relative;
+  border-radius:3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+
+.percentage{
+
+    background: #ccc;
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    height: 30px;
+   -webkit-background-size: 35px 30px;
+   -moz-background-size:    35px 30px;
+   -o-background-size:      35px 30px;
+    background-size:         30px 30px;
+    left: 0;
+    position: absolute;
+     border-radius:3px ;
+    -moz-border-radius:3px ;
+    -o-border-radius: 3px ;
+    -ms-border-radius: 3px ;
+    -webkit-border-radius: 3px ;
+      top: 0;
+  height: 35px;
+ 
+}
+
+.skillbarHolderImp {
+    background-color: #FFD5D5;
+}
+.important{
+    background: #F48975;
+    background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    height: 30px;
+   -webkit-background-size: 35px 30px;
+   -moz-background-size:    35px 30px;
+   -o-background-size:      35px 30px;
+    background-size:         30px 30px;
+    left: 0;
+    position: absolute;
+     border-radius:3px ;
+    -moz-border-radius:3px ;
+    -o-border-radius: 3px ;
+    -ms-border-radius: 3px ;
+    -webkit-border-radius: 3px ;
+      top: 0;
+  height: 35px;
+}
+
+.skillbarTitle{
+  position:absolute;
+  top:7px;
+  left:15px;
+  z-index:10;
+  color:#333;
+  font-size:18px;
+  font-weight: bold;
+}
+.skillbarTitleImp {
+  color: #BF0000;
+}
+.hidden {
+  display: none;
+}
