@@ -138,9 +138,9 @@ $().ready (function () {
       //for (i in gswc)
       for (i=0; i<60; i++) {
         if (gswc[i].title != 'LovingHeart' && gswc[i].title != 'OPENFOOD' && gswc[i].title != 'Best Wedding' && gswc[i].title != 'Different Voice')
-          html += '<div class="skillBar"><div class="skillbarHolder"><div class="skillbarTitle">' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
+          html += '<div class="skillBar"><div class="skillbarHolder"><div class="skillbarTitle">#' + (i + 1) + '&nbsp;&nbsp;&nbsp;' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
         else
-          html += '<div class="skillBar"><div class="skillbarHolder skillbarHolderImp"><div class="skillbarTitle skillbarTitleImp">' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage important" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
+          html += '<div class="skillBar"><div class="skillbarHolder skillbarHolderImp"><div class="skillbarTitle skillbarTitleImp">#' + (i + 1) + '&nbsp;&nbsp;&nbsp;' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage important" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
       }
 
       //for (i in gswc)
@@ -150,9 +150,9 @@ $().ready (function () {
           break;
 
         if (gswc[i].title != 'LovingHeart' && gswc[i].title != 'OPENFOOD' && gswc[i].title != 'Best Wedding' && gswc[i].title != 'Different Voice')
-          html += '<div class="hidden skillBar"><div class="skillbarHolder"><div class="skillbarTitle">' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
+          html += '<div class="hidden skillBar"><div class="skillbarHolder"><div class="skillbarTitle">#' + (i + 1) + '&nbsp;&nbsp;&nbsp;' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
         else
-          html += '<div class="hidden skillBar"><div class="skillbarHolder skillbarHolderImp"><div class="skillbarTitle skillbarTitleImp">' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage important" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
+          html += '<div class="hidden skillBar"><div class="skillbarHolder skillbarHolderImp"><div class="skillbarTitle skillbarTitleImp">#' + (i + 1) + '&nbsp;&nbsp;&nbsp;' + gswc[i].title + ' : ' + gswc[i].counter + '票</div><div class="percentage important" style="width: ' + parseInt (gswc[i].counter / max * 100) + '%;"></div></div></div>';
       }
 
       pool.html (html);
